@@ -3,10 +3,9 @@
 '''
 use a for loop to iterate through all possible integers to find the factors of 24
 '''
-def main():
-    factors = []
-    myNumber = 24
+number = 24
 
-
-if __name__ == "__main__":
-    main()
+print(f"Factors of {number}:")
+for i in range(1, number + 1):
+    if number % i == 0:
+        print(i)
