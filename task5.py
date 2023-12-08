@@ -90,7 +90,7 @@ while True:
     elif action == "drop item":
         item = input("Enter the item you want to drop from your inventory: ").lower()
         
-        # Check if the entered item is a known item or an abbreviation
+        # Check item or abbreviation
         for known_item, full_name in possible_items.items():
             if item in known_item or item in full_name:
                 item = full_name
